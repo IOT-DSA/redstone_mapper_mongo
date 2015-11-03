@@ -128,7 +128,7 @@ class MongoDb {
     if (obj is! Map) {
       obj = _codec.encode(obj);
     }
-    return dbCol.insert(obj);
+    return dbCol.save(obj);
   }
   
   /**
